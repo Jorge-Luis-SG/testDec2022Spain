@@ -1,0 +1,10 @@
+.graphics{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 2rem;
+  margin-top: 2rem;
+  @media screen and (max-width: 1375px) {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}

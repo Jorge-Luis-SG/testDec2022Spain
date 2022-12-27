@@ -1,0 +1,52 @@
+.header {
+  width: 260px;
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+  border-radius: 1.2rem;
+  background: white;
+  z-index: 9999999;
+  @media screen and (max-width: 992px) {
+    left: -260px;
+    transition: left 0.5s;
+
+    &.active {
+      left: 0;
+      transition: left 0.5s;
+
+      .menuOpen {
+        transform: rotateZ("90deg");
+        transition: all 0.5s;
+      }
+    }
+  }
+  .menuOpen {
+    width: 50px;
+    right: -43px;
+    transition: all 0.5s;
+  }
+  &-content {
+    nav {
+      .logo {
+        border-bottom: 1px solid #00000030;
+        img {
+          max-width: 100px;
+        }
+      }
+      ul {
+        li {
+          padding: 1rem 2rem;
+          display: flex;
+          cursor: pointer;
+          &:hover {
+            background-color: #00000010;
+          }
+          img {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+            margin-right: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+}

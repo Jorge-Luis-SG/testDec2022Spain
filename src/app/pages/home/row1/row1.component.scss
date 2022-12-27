@@ -1,0 +1,13 @@
+.widgets {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 2rem;
+  @media screen and (max-width: 1500px) {
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="widget d-flex justify-content-between bg-white">
+  <div class="widget-box1">
+    <h6 class="mb-1 text-gray">{{data.title}}</h6>
+    <span class="price">{{data.money}}</span>
+    <p class="mt-2 mb-0"><span [class.active]="data.percent < 0">{{data.percent}}%</span> {{data.text}}</p>
+  </div>
+  <div class="widget-box2">
+    <div class="img{{id}} d-flex align-items-center justify-content-center">
+      <img src="./assets/image/icons/{{data.img}}.svg" alt="" class="">
+    </div>
+ 
+  </div>
+</div>

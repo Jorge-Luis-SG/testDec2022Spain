@@ -1,0 +1,20 @@
+@import "../styles.scss";
+.body {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 320px;
+    background-color: $blue;
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: 260px auto;
+    grid-gap: 2rem;
+    padding: 2rem;
+    @media screen and (max-width: 992px) {
+      grid-template-columns: auto;
+  }
+  }
+}

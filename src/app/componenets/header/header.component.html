@@ -1,0 +1,18 @@
+<header class="header h-100 position-fixed pt-4" [class.active]="toggle">
+  <div class="menuOpen position-absolute d-lg-none" (click)="menuToggle()">
+    <img src="./assets/image/icons/menu.svg" alt="" class="w-100">
+  </div>
+  <div class="header-content">
+    <nav class="d-flex flex-column align-items-center">
+      <div class="logo pb-3 w-100 text-center">
+        <img src="./assets/image/logo.png" alt="Venezuela" class="w-100">
+      </div>
+      <ul class="ps-0 mt-3 w-100 d-flex flex-column align-items-center" >
+        <li class="w-100 py-3" ><img src="./assets/image/icons/home.svg" alt="">Dashboard</li>
+        <li class="w-100 py-3" ><img src="./assets/image/icons/calendar.svg" alt="">Tables</li>
+        <li class="w-100 py-3" ><img src="./assets/image/icons/cash.svg" alt="">Pay</li>
+        <li class="w-100 py-3" ><img src="./assets/image/icons/balance.svg" alt="">Balance</li>
+      </ul>
+    </nav>
+  </div>
+</header>

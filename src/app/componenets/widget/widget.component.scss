@@ -1,0 +1,52 @@
+@import "../../../styles.scss";
+
+.widget {
+  max-width: 350px;
+  min-width: 270px;
+  width: 90%;
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  &-box1 {
+    h6 {
+      font-weight: 600;
+      color: #00000099;
+    }
+    .price {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #344767;
+    }
+    p {
+      span {
+        font-weight: 700;
+        color: $green;
+        &.active {
+          color: $red;
+        }
+      }
+    }
+  }
+  &-box2 {
+    div {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      img {
+        width: 55%;
+        filter: invert(1);
+      }
+      &.img0 {
+        background-color: $blue;
+      }
+      &.img1 {
+        background-color: $red;
+      }
+      &.img2 {
+        @extend %bgGreen;
+      }
+      &.img3 {
+        @extend %bgYellow;
+      }
+    }
+  }
+}

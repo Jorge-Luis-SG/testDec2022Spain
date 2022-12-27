@@ -1,0 +1,10 @@
+.home {
+  // width: calc(100% - 260px);
+  &-section {
+    &-box1 {
+      h5{
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
